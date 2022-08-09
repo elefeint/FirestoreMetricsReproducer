@@ -1,6 +1,6 @@
-package com.example.firestoreMetricsReproducer.metrics;
+package com.example.r2dbcMetricsReproducer.metrics;
 
-import com.example.firestoreMetricsReproducer.data.ReproducerRepository;
+import com.example.r2dbcMetricsReproducer.data.ReproducerRepository;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>firestore-metrics-reproducer</artifactId>
+    <artifactId>r2dbc-h2-metrics-reproducer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>firestore-metrics-reproducer</name>
-    <description>firestore-metrics-reproducer</description>
+    <name>r2dbc-h2-metrics-reproducer</name>
+    <description>r2dbc-metrics-reproducer</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -41,14 +41,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
+
         <dependency>
-            <groupId>com.google.cloud</groupId>
-            <artifactId>spring-cloud-gcp-starter</artifactId>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-r2dbc</artifactId>
+            <version>1.5.2</version>
         </dependency>
+
         <dependency>
-            <groupId>com.google.cloud</groupId>
-            <artifactId>spring-cloud-gcp-starter-data-firestore</artifactId>
+            <groupId>io.r2dbc</groupId>
+            <artifactId>r2dbc-h2</artifactId>
+            <version>0.9.1.RELEASE</version>
         </dependency>
+
 
         <dependency>
             <groupId>io.micrometer</groupId>
